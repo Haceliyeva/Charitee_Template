@@ -1,0 +1,837 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #2D2D2D;
+}
+
+.header .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.header .container img {
+    width: 200px;
+    cursor: pointer;
+}
+
+.header .container ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header .container ul li {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        color: #65C9BB;
+    }
+}
+
+.header .container .textButton {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header .container .textButton p {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.header .container .textButton button {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 17px;
+    color: white;
+    border: 1px solid #EE5C44;
+    background-color: #EE5C44;
+    cursor: pointer;
+
+    &:hover {
+        background-color: black;
+        border: 1px solid white;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:1248px) {
+    .header .container ul {
+        display: none;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:781px) {
+    .header .container .textButton p {
+        display: none;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:525px) {
+    .header .container .textButton button {
+        width: 100px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        font-size: 10px;
+    }
+
+    .header .container img {
+        width: 100px;
+    }
+}
+
+.charitee {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('/assets/img/h1_hero1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.chariteeContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    height: 800px;
+}
+
+.chariteeContainer h1 {
+    font-size: 70px;
+    color: white;
+}
+
+.chariteeContainer p {
+    font-size: 28px;
+    color: #FFF8EB;
+}
+
+.chariteeContainer button {
+    padding: 27px;
+    width: 230px;
+    color: white;
+    background-color: #65C9BB;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: black;
+        border: 1px solid white;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:606px) {
+    .charitee .chariteeContainer h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:357px) {
+    .chariteeContainer button {
+        width: 150px;
+    }
+}
+
+.donate {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FCF2EB;
+}
+
+.donate .donateContainer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    align-items: center;
+}
+
+.donate .donateContainer .donateTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.donate .donateContainer .donateTexts h3 {
+    color: #65C9BB;
+    font-weight: 400;
+}
+
+.donate .donateContainer .donateTexts h2 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #263B5C;
+}
+
+.donate .donateContainer .donateTexts p {
+    font-size: 25px;
+    color: #77778A;
+}
+
+.donate .donateContainer .donateTexts .buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.donate .donateContainer .donateTexts .buttons button {
+    background-color: #F15B43;
+    border: 1px solid #F15B43;
+    color: white;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #FCF2EB;
+        border: 2px solid #F15B43;
+        color: #F15B43;
+    }
+}
+
+.donate .donateContainer .donateTexts .buttons .button button {
+    background-color: transparent;
+    border: 2px solid #F15B43;
+    color: #F15B43;
+    padding: 20px 40px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #F15B43;
+        border: 2px solid #FCF2EB;
+        color: #FCF2EB;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:1300px) {
+    .donate .donateContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:747px) {
+    .donate .donateContainer img {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:521px) {
+    .donate .donateContainer .donateTexts h2 {
+        font-size: 30px;
+    }
+
+    .donate .donateContainer .donateTexts p {
+        font-size: 20px;
+    }
+
+    .donate .donateContainer .donateTexts .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .donate .donateContainer img {
+        width: 250px;
+    }
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about .aboutContainer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.about .aboutContainer .aboutTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about .aboutContainer .aboutTexts h3 {
+    color: #65C9BB;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.about .aboutContainer .aboutTexts h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #263B5C;
+}
+
+.about .aboutContainer .aboutTexts p {
+    font-size: 23px;
+    color: #77778A;
+}
+
+.about .aboutContainer .aboutTexts button {
+    background-color: #F15B43;
+    border: 1px solid #F15B43;
+    color: white;
+    padding: 20px 40px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 250px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #FCF2EB;
+        border: 2px solid #F15B43;
+        color: #F15B43;
+    }
+}
+
+.about .aboutContainer .image img {
+    width: 660px;
+}
+
+@media screen and (min-width:300px) and (max-width:1300px) {
+    .about .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:722px) {
+    .about .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about .aboutContainer .image img {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:424px) {
+    .about .aboutContainer .image img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:334px) {
+    .about .aboutContainer .image img {
+        width: 200px;
+    }
+
+    .about .aboutContainer .aboutTexts button {
+        width: 150px;
+    }
+}
+
+.programs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+
+    .container {
+        width: 100%;
+        display: flex;
+        padding: 30px 0;
+        align-items: center;
+        gap: 20px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            border: 2px solid #F4F2F1;
+            background-color: #F4F2F1;
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding: 20px;
+
+                h2 {
+                    font-size: 27px;
+                }
+
+                p {
+                    font-size: 18px;
+                    color: #777777;
+                }
+
+                .textsButton {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .texts {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        h3 {
+                            color: #65C9BB;
+                        }
+
+                        span {
+                            color: #263B5C;
+                        }
+                    }
+
+                    button {
+                        width: 150px;
+                        background-color: #F15B43;
+                        border: 1px solid #F15B43;
+                        color: white;
+                        font-size: 16px;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #FCF2EB;
+                            border: 2px solid #F15B43;
+                            color: #F15B43;
+                        }
+                    }
+                }
+
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:1240px) {
+    .programs {
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:413px) {
+    .programs {
+        .container {
+            .card {
+                .text {
+                    .textsButton {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.today {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.today .container {
+    width: 80%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.today .container .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.today .container .texts h3 {
+    color: #6FC9BB;
+}
+
+.today .container .texts h1 {
+    font-size: 40px;
+    color: #263B5C;
+}
+
+.today .container .texts p {
+    font-size: 23px;
+    color: #7B7D7B;
+}
+
+.today .container .texts button {
+    width: 170px;
+    padding: 20px;
+    font-size: 20px;
+    border: 2px solid #F15B43;
+    background-color: white;
+    color: #F15B43;
+    cursor: pointer;
+    &:hover {
+        background-color: #F15B43;
+        border: 2px solid #FCF2EB;
+        color: #FCF2EB;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:1099px) {
+    .today .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:609px) {
+    .today .container img {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:418px) {
+    .today .container img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:327px) {
+    .today .container img {
+        width: 200px;
+    }
+
+    .today .container .texts h1 {
+        font-size: 20px;
+    }
+}
+
+.health {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url('/assets/img/section-bg1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.health .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 60px 0;
+}
+
+.health .container .topTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    color: white;
+}
+
+.health .container .topTexts h1 {
+    font-size: 45px;
+}
+
+.health .container .bottomTexts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.health .container .bottomTexts .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.health .container .bottomTexts .cards img {
+    width: 100px;
+}
+
+.health .container .bottomTexts .cards h2 {
+    color: #F7E7FF;
+    font-size: 25px;
+}
+
+.health .container .bottomTexts .cards p {
+    color: #F7E7FF;
+    font-size: 20px;
+}
+
+@media screen and (min-width:300px) and (max-width:1240px) {
+    .health .container .bottomTexts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:336px) {
+    .health .container .topTexts h1 {
+        font-size: 20px;
+    }
+}
+
+
+.latest {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.latest .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+}
+
+.latest .container .leftTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.latest .container .leftTexts h3 {
+    color: #6ACBBF;
+}
+
+.latest .container .leftTexts h1 {
+    font-size: 40px;
+    color: #263B5C;
+}
+
+.latest .container .rightTexts {
+    display: flex;
+    gap: 40px;
+}
+
+.latest .container .rightTexts .rightText {
+    border: 1px solid #F4F2F1;
+    background-color: #F4F2F1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.latest .container .rightTexts .rightText .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.latest .container .rightTexts .rightText .texts h2 {
+    color: #263B5C;
+    font-size: 28px;
+}
+
+.latest .container .rightTexts .rightText .texts p {
+    color: #868585;
+    font-size: 18px;
+}
+
+.latest .container .rightTexts .rightText .texts button {
+    border: none;
+    display: flex;
+    justify-content: start;
+    font-size: 18px;
+    color: #F16650;
+    text-decoration: underline;
+}
+
+@media screen and (min-width:300px) and (max-width:1221px) {
+    .latest .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:1000px) {
+    .latest .container .rightTexts {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #263B5C;
+}
+
+.footer .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+.footer .container .topFooter {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(87, 87, 87);
+    padding: 10px 0;
+}
+
+.footer .container .topFooter .footerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .container .topFooter .footerLeft img {
+    width: 200px;
+}
+
+.footer .container .topFooter .footerLeft p {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.footer .container .topFooter .footerLeft .medias {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.footer .container .topFooter .footerLeft .medias .facebook i {
+    border: 1px solid #3B5998;
+    background-color: #3B5998;
+    padding: 15px;
+    color: white;
+}
+
+.footer .container .topFooter .footerLeft .medias .linkedin i {
+    border: 1px solid #0077B5;
+    background-color: #0077B5;
+    padding: 15px;
+    color: white;
+}
+
+.footer .container .topFooter .footerLeft .medias .instagram i {
+    border: 1px solid #405DE6;
+    background-color: #405DE6;
+    padding: 15px;
+    color: white;
+}
+
+.footer .container .topFooter .footerLeft .medias .youtube i {
+    border: 1px solid #FF0000;
+    background-color: #FF0000;
+    padding: 15px;
+    color: white;
+}
+
+.footer .container .topFooter .footerTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .container .topFooter .footerTexts ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .container .topFooter .footerTexts h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.footer .container .topFooter .footerTexts ul li {
+    list-style: none;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.footer .container .topFooter .footerTexts .footerLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer .container .topFooter .footerLeft h3 {
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.footer .container .topFooter .footerLeft button {
+    width: 150px;
+    padding: 20px;
+    background-color: #F65841;
+    border: 1px solid #F65841;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover {
+        background-color: #263B5C;
+        border: 2px solid white;
+        color: white;
+    }
+}
+
+.footer .container .bottomFooter p {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+}
+
+.footer .container .bottomFooter i {
+    color: #65C9BB;
+}
+
+.footer .container .bottomFooter span {
+    color: #65C9BB;
+}
+
+@media screen and (min-width:300px) and (max-width:1136px) {
+    .footer .container .topFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+}
